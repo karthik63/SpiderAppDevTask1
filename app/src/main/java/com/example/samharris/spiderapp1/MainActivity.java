@@ -14,8 +14,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String studentName;
-
     EditText name;
     EditText rollNo;
     Spinner depts;
@@ -24,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox webDev;
     CheckBox algos;
     CheckBox tronix;
+    private String studentName;
 
     private boolean isEmpty(EditText etText) {
         return etText.getText().toString().trim().length() == 0;
