@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SpiderApp1</string>
+    <string name="heading">Spider Inductions 2016</string>
+    <string name="submit">SUBMIT</string>
+    <string name="profiles">Select profiles</string>
+    <string name="tronix">Tronix</string>
+    <string name="algos">Algos</string>
+    <string name="appDev">AppDev</string>
+    <string name="webdev">WebDev</string>
+    <string-array name="departments">
+        <item>Civil Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>ICE</item>
+        <item>Mechanical Engineering</item>
+        <item>MME</item>
+        <item>Production Engineering</item>
+
+    </string-array>
+
+</resources>

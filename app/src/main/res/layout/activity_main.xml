@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlMainPage"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.samharris.spiderapp1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/heading"
+        android:id="@+id/tvHeading"
+        android:layout_marginTop="12dp"
+        android:textIsSelectable="false"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/tvHeading"
+        android:layout_alignStart="@+id/tvHeading" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etRollNo"
+        android:hint="Roll No"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/etName"
+        android:layout_alignStart="@+id/etName" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/etRollNo"
+        android:id="@+id/spDepts"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btSubmit"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:checked="true"
+        android:textOn="yes"
+        android:textOff="no"
+        android:nestedScrollingEnabled="false"
+        android:showText="true"
+        android:text="Do you want a mentor ?"
+        android:textSize="16sp"
+        android:layout_below="@+id/spDepts"
+        android:layout_marginTop = "20dp"
+        android:layout_alignEnd="@+id/etRollNo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profiles"
+        android:id="@+id/textView"
+        android:textIsSelectable="false"
+        android:textSize="20dp"
+        android:layout_above="@+id/cbApp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/algos"
+        android:id="@+id/cbAlgos"
+        android:checked="false"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/cbTronix"
+        android:layout_alignStart="@+id/cbApp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appDev"
+        android:id="@+id/cbApp"
+        android:checked="false"
+        android:textSize="15sp"
+        android:layout_above="@+id/cbAlgos"
+        android:layout_alignStart="@+id/switch1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tronix"
+        android:id="@+id/cbTronix"
+        android:checked="false"
+        android:textSize="15sp"
+        android:layout_above="@+id/btSubmit"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/btSubmit" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/webdev"
+        android:id="@+id/cbWeb"
+        android:checked="false"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/cbApp"
+        android:layout_toEndOf="@+id/btSubmit" />
+
+</RelativeLayout>
